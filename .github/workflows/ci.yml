@@ -8,6 +8,11 @@ on:
   pull_request:
     branches: [ main, master ]
 
+# Add permissions needed for creating releases
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
